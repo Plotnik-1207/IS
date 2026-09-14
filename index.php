@@ -1,6 +1,10 @@
 <?php
 
-class person {
+interface Printable {
+    public function toString(): string;
+}
+
+class Person implements Printable {
     public $name;
     public $birthDate;
 
@@ -8,27 +12,57 @@ class person {
         $this->name = $name;
         $this->birthDate = $birthDate;
     }
+
+    public function toString(): string {
+        return $this->name . " | " . $this->birthDate . "\n";
+    }
 }
 
-class cost {
+class Cost implements Printable {
     public $govCost;
     public $marketCost;
 
     public function __construct($govCost, $marketCost) {
         $this->govCost = $govCost;
-        $this->marketCost = $marketCost;    
+        $this->marketCost = $marketCost;
+    }
+
+    public function toString(): string {
+        return "gov: " . $this->govCost . " | " . "market: " . $this->marketCost . "\n";
     }
 }
 
-class doc {
+class Doc implements Printable {
     public $owner;
     public $date;
     public $cost;
 
     public function __construct($ownerName, $birthDate, $date, $govCost, $marketCost) {
-        $this->owner = new person($ownerName, $birthDate);
+        $this->owner = new Person($ownerName, $birthDate);
         $this->date = $date;
-        $this->cost = new cost($govCost, $marketCost);
+        $this->cost = new Cost($govCost, $marketCost);
+    }
+
+    public function toString(): string {
+        return $this->owner->toString() . " | ". $this->date . " | " . $this->cost->toString() . "\n";
+    }
+}
+
+class PrintableList {
+    private array $items = [];
+
+    public function add(Printable $item): void {
+        $this->items[] = $item;
+    }
+
+    public function toStringAll(): string {
+        $result = "";
+        
+        foreach ($this->items as $item) {
+            $result = $result . $item->toString();
+        }
+
+        return $result;
     }
 }
 
@@ -42,11 +76,11 @@ function parse($str) {
 
     $ownerName = trim(implode(' ', $a), '"');
 
-    return new doc($ownerName, $birthDate, $date, $govCost, $marketCost);
+    return new Doc($ownerName, $birthDate, $date, $govCost, $marketCost);
 }
 
 function main() {
-    $array = [];
+    $list = new PrintableList();
 
     while (true) {
         $str = readline();
@@ -54,8 +88,10 @@ function main() {
         if ($str == "")
             break;
 
-        $array[] = parse($str);
+        $list->add(parse($str));
     }
+
+    echo $list->toStringAll();
 }
 
 main();
