@@ -1,0 +1,14 @@
+C:\Users\Plotnik\source\repos\IS\IS\bin\Debug\net9.0\IS.exe
+C:\Users\Plotnik\source\repos\IS\IS\bin\Debug\net9.0\IS.deps.json
+C:\Users\Plotnik\source\repos\IS\IS\bin\Debug\net9.0\IS.runtimeconfig.json
+C:\Users\Plotnik\source\repos\IS\IS\bin\Debug\net9.0\IS.dll
+C:\Users\Plotnik\source\repos\IS\IS\bin\Debug\net9.0\IS.pdb
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.AssemblyInfoInputs.cache
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.AssemblyInfo.cs
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.csproj.CoreCompileInputs.cache
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.dll
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\refint\IS.dll
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.pdb
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.genruntimeconfig.cache
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\ref\IS.dll
