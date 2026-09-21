@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IS
 {
-    public class Doc : IPrintable
+    public class Doc
     {
         public Person Owner { get; }
         public string Date { get; }

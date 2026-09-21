@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IS
 {
-    public class Cost : IPrintable
+    public class Cost
     {
         public string GovCost { get; }
         public string MarketCost { get; }

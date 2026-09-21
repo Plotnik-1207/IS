@@ -1,7 +1,7 @@
 ﻿using IS;
 using System.IO;
 
-var list = new List<IPrintable>();
+var list = new List<object>();
 
 string path = "C:\\Users\\Plotnik\\Documents\\data.txt";
 string[] lines = File.ReadAllLines(path);
