@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IS
 {
-    internal interface IPrintable
+    public interface IPrintable
     {
         string ToString();
     }

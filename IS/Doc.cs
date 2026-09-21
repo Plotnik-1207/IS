@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IS
 {
-    internal class Doc : IPrintable
+    public class Doc : IPrintable
     {
         public Person Owner { get; }
         public string Date { get; }
@@ -20,7 +20,7 @@ namespace IS
         }
         public override string ToString()
         {
-            return $"Владелец: {Owner.ToString()} | Дата регистрации: {Date} | Стоимость: {Cost.ToString()}\n";
+            return $"Владелец: {Owner.ToString()} | Дата регистрации: {Date} | Стоимость: {Cost.ToString()}";
         }
     }
 }
