@@ -13,7 +13,9 @@ namespace IS
             var parts = str.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToList();
 
             if (parts.Count < 5)
-                throw new Exception();
+                throw new FormatException("Количество аргументов меньше 5");
+            if (!Int32.TryParse(parts[^1], out int number1) || !Int32.TryParse(parts[^2], out int number2))
+                throw new ArgumentException("Стоимость записана неправильно");
 
             string marketCost = parts[^1];
             parts.RemoveAt(parts.Count - 1);
