@@ -1,33 +1,37 @@
 ﻿using IS;
 using System.IO;
-
-var list = new List<object>();
-
-string path = "C:\\Users\\Plotnik\\Documents\\data.txt";
-string[] lines = File.ReadAllLines(path);
-
-foreach (var str in lines)
+static void Main()
 {
-    Console.WriteLine($"Текущая строка: {str}");
-    try
-    {
-        Console.WriteLine(DocParser.Parse(str));
-        list.Add(DocParser.Parse(str));
-    }
-    catch (Exception e)
-    {
-        Console.WriteLine(e.ToString());
-    }
+    var list = new List<object>();
 
-    Console.Write("Чтобы продолжить нажмите Enter");
-    while (true)
+    string path = "C:\\Users\\Plotnik\\Documents\\data.txt";
+    string[] lines = File.ReadAllLines(path);
+
+    foreach (var str in lines)
     {
-        var key = System.Console.ReadKey(true);
-        if (key.Key == ConsoleKey.Enter)
-            break;
+        Console.WriteLine($"Текущая строка: {str}");
+        try
+        {
+            Console.WriteLine(DocParser.Parse(str));
+            list.Add(DocParser.Parse(str));
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+
+        Console.Write("Чтобы продолжить нажмите Enter");
+        while (true)
+        {
+            var key = System.Console.ReadKey(true);
+            if (key.Key == ConsoleKey.Enter)
+                break;
+        }
+        Console.Clear();
     }
-    Console.Clear();
 }
+
+Main();
 /*
 while (true)
 {
