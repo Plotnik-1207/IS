@@ -24,13 +24,28 @@ var list = new List<IPrintable>();
 
 while (true)
 {
-    Console.WriteLine("Введите данные:");
+    Console.WriteLine("Введите данные в виде: \"ФИО\" гггг.мм.дд гггг.мм.дд кадастровая стоимость рыночная стоимость");
+    Console.WriteLine("Пример: \"Иван Иванов\" 2000.12.12 2020.05.09 1200000 2000000");
 
     string? str = Console.ReadLine();
     if (string.IsNullOrEmpty(str))
         break;
 
-    list.Add(Parse(str));
+    try
+    {
+        list.Add(Parse(str));
+    }
+    catch
+    {
+        Console.WriteLine("Введённая строка не соответствует шаблону");
+    }
 
+    Console.Write("Чтобы продолжить нажмите Enter");
+    while (true)
+    {
+        var key = System.Console.ReadKey(true);
+        if (key.Key == ConsoleKey.Enter)
+            break;
+    }
     Console.Clear();
 }
