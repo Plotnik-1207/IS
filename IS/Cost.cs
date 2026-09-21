@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IS
 {
-    internal class Cost : IPrintable
+    public class Cost : IPrintable
     {
         public string GovCost { get; }
         public string MarketCost { get; }
@@ -18,7 +18,7 @@ namespace IS
         }
         public override string ToString()
         {
-            return $"Кадастровая стоимость: {GovCost} | Рыночная стоимость: {MarketCost}\n";
+            return $"Кадастровая стоимость: {GovCost} | Рыночная стоимость: {MarketCost}";
         }
     }
 }

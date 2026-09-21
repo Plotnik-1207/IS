@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IS
 {
-    internal class Person
+    public class Person
     {
         public string Name { get; }
         public string BirthDate { get; }
@@ -18,7 +18,7 @@ namespace IS
         }
         public override string ToString()
         {
-            return $"Имя: {Name} | Дата рождения: {BirthDate}\n";
+            return $"Имя: {Name} | Дата рождения: {BirthDate}";
         }
     }
 }
