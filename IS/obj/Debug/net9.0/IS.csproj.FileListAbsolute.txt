@@ -7,8 +7,10 @@ C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.GeneratedMSBuildEditorCo
 C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.AssemblyInfoInputs.cache
 C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.AssemblyInfo.cs
 C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.csproj.CoreCompileInputs.cache
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.sourcelink.json
 C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.dll
 C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\refint\IS.dll
 C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.pdb
 C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.genruntimeconfig.cache
 C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\ref\IS.dll
+C:\Users\Plotnik\source\repos\IS\IS\obj\Debug\net9.0\IS.csproj.Up2Date

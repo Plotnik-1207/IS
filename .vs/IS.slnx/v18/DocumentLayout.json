@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Plotnik\\source\\repos\\IS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|solutionrelative:is\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A26D0BC-053F-4AEC-B9ED-82DA821F1594}|IS.Tests\\IS.Tests.csproj|c:\\users\\plotnik\\source\\repos\\is\\is.tests\\unittest1 - \u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A26D0BC-053F-4AEC-B9ED-82DA821F1594}|IS.Tests\\IS.Tests.csproj|solutionrelative:is.tests\\unittest1 - \u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\printable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|solutionrelative:is\\printable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A26D0BC-053F-4AEC-B9ED-82DA821F1594}|IS.Tests\\IS.Tests.csproj|c:\\users\\plotnik\\source\\repos\\is\\is.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A26D0BC-053F-4AEC-B9ED-82DA821F1594}|IS.Tests\\IS.Tests.csproj|solutionrelative:is.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\doc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|solutionrelative:is\\doc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|solutionrelative:is\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|solutionrelative:is\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\docparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|solutionrelative:is\\docparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\cost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9C6EB7B-795F-45A1-B6BF-438F297C8F09}|IS\\IS.csproj|solutionrelative:is\\cost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\doc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|solutionrelative:is\\doc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\cost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|solutionrelative:is\\cost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|c:\\users\\plotnik\\source\\repos\\is\\is\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16798B88-11CE-E62D-9CB0-DF4DBDEFF778}|IS\\IS.csproj|solutionrelative:is\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1 - \u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C.cs",
+              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS.Tests\\UnitTest1 - \u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C.cs",
+              "RelativeDocumentMoniker": "IS.Tests\\UnitTest1 - \u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C.cs",
+              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS.Tests\\UnitTest1 - \u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C.cs",
+              "RelativeToolTip": "IS.Tests\\UnitTest1 - \u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T13:10:01.589Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -39,66 +60,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Printable.cs",
-              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Printable.cs",
-              "RelativeDocumentMoniker": "IS\\Printable.cs",
-              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Printable.cs",
-              "RelativeToolTip": "IS\\Printable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "IS.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "IS.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T03:23:11.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cost.cs",
-              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Cost.cs",
-              "RelativeDocumentMoniker": "IS\\Cost.cs",
-              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Cost.cs",
-              "RelativeToolTip": "IS\\Cost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T03:19:07.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Person.cs",
-              "RelativeDocumentMoniker": "IS\\Person.cs",
-              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Person.cs",
-              "RelativeToolTip": "IS\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T03:18:58.795Z",
+              "WhenOpened": "2026-09-21T11:35:07.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Doc.cs",
-              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Doc.cs",
-              "RelativeDocumentMoniker": "IS\\Doc.cs",
-              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Doc.cs",
-              "RelativeToolTip": "IS\\Doc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T03:18:47.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Program.cs",
               "RelativeDocumentMoniker": "IS\\Program.cs",
               "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Program.cs",
               "RelativeToolTip": "IS\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T03:18:04.072Z",
+              "WhenOpened": "2026-09-21T11:09:03.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DocParser.cs",
+              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\DocParser.cs",
+              "RelativeDocumentMoniker": "IS\\DocParser.cs",
+              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\DocParser.cs",
+              "RelativeToolTip": "IS\\DocParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:38:54.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Person.cs",
+              "RelativeDocumentMoniker": "IS\\Person.cs",
+              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Person.cs",
+              "RelativeToolTip": "IS\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:09:00.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cost.cs",
+              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Cost.cs",
+              "RelativeDocumentMoniker": "IS\\Cost.cs",
+              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Cost.cs",
+              "RelativeToolTip": "IS\\Cost.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:08:59.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Doc.cs",
+              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Doc.cs",
+              "RelativeDocumentMoniker": "IS\\Doc.cs",
+              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\IS\\IS\\Doc.cs",
+              "RelativeToolTip": "IS\\Doc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:08:58.181Z",
               "EditorCaption": ""
             }
           ]
