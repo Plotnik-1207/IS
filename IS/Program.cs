@@ -14,9 +14,9 @@ foreach (var str in lines)
         Console.WriteLine(DocParser.Parse(str));
         list.Add(DocParser.Parse(str));
     }
-    catch
+    catch (Exception e)
     {
-        Console.WriteLine("Cтрока не соответствует шаблону");
+        Console.WriteLine(e.ToString());
     }
 
     Console.Write("Чтобы продолжить нажмите Enter");
