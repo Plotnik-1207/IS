@@ -1,44 +1,104 @@
 ﻿using IS;
-namespace IS.Tests;
+using Xunit;
 
-public class DocParserTests
+namespace IS.Tests
 {
-    [Theory]
-    [InlineData("\"Иван Иванов\" 2000.12.12 2020.05.09 1200000 2000000")]
-    [InlineData("\"Петр Сидоров\" 1995.01.01 2021.03.15 850000 1100000")]
-    [InlineData("Анна Смирнова 1988.07.20 2019.11.30 2300000 3100000")]
-    public void Parse_ValidInput_ReturnsDoc(string input)
+    public class DocParserTests
     {
-        var doc = DocParser.Parse(input);
+        [Fact]
+        public void Parse_ValidLine_ReturnsCorrectDoc()
+        {
+            string input = @"""Иван Иванов"" 2000.12.12 2020.05.09 1200000 2000000";
 
-        Assert.NotNull(doc);
-        Assert.False(string.IsNullOrWhiteSpace(doc.Owner.Name));
-        Assert.False(string.IsNullOrWhiteSpace(doc.Date));
-        Assert.False(string.IsNullOrWhiteSpace(doc.Cost.GovCost));
-        Assert.False(string.IsNullOrWhiteSpace(doc.Cost.MarketCost));
-    }
+            Doc doc = DocParser.Parse(input);
 
-    [Theory]
-    [InlineData("")]
-    [InlineData("   ")]
-    [InlineData("только одно слово")]
-    [InlineData("\"Имя\" 2000.01.01")]
-    [InlineData("\"Имя\" 2000.01.01 2020.01.01 abc 2000000")]
-    [InlineData("\"Имя\" 2000.01.01 2020.01.01 1200000 xyz")]
-    public void Parse_InvalidInput_Throws(string input)
-    {
-        Assert.ThrowsAny<Exception>(() => DocParser.Parse(input));
-    }
+            Assert.Equal("Иван Иванов", doc.Owner.Name);
+            Assert.Equal(new DateTime(2000, 12, 12), doc.Owner.BirthDate);
+            Assert.Equal(new DateTime(2020, 5, 9), doc.Date);
+            Assert.Equal(1200000, doc.Cost.GovCost);
+            Assert.Equal(2000000, doc.Cost.MarketCost);
+        }
 
-    [Fact]
-    public void Parse_CorrectlyExtractsMultiWordName()
-    {
-        var doc = DocParser.Parse("\"Иван Иванович Иванов\" 1990.05.15 2022.08.10 1500000 2500000");
+        [Fact]
+        public void Parse_SingleWordName_ReturnsCorrectDoc()
+        {
+            string input = @"""Иван"" 2000.12.12 2020.05.09 1200000 2000000";
 
-        Assert.Equal("Иван Иванович Иванов", doc.Owner.Name);
-        Assert.Equal("1990.05.15", doc.Owner.BirthDate);
-        Assert.Equal("2022.08.10", doc.Date);
-        Assert.Equal("1500000", doc.Cost.GovCost);
-        Assert.Equal("2500000", doc.Cost.MarketCost);
+            Doc doc = DocParser.Parse(input);
+
+            Assert.Equal("Иван", doc.Owner.Name);
+        }
+
+        [Fact]
+        public void Parse_LessThanFourFieldsAfterName_ThrowsFormatException()
+        {
+            string input = @"""Иван Иванов"" 2000.12.12 2020.05.09 1200000";
+
+            Assert.Throws<FormatException>(() => DocParser.Parse(input));
+        }
+
+        [Fact]
+        public void Parse_EmptyString_ThrowsFormatException()
+        {
+            string input = "";
+
+            Assert.Throws<FormatException>(() => DocParser.Parse(input));
+        }
+
+        [Fact]
+        public void Parse_NullString_ThrowsFormatException()
+        {
+            Assert.Throws<FormatException>(() => DocParser.Parse(null));
+        }
+
+        [Theory]
+        [InlineData(@"""Иван Иванов"" 2000.12.12 2020.05.09 abc 2000000")]
+        [InlineData(@"""Иван Иванов"" 2000.12.12 2020.05.09 1200000 xyz")]
+        public void Parse_InvalidCost_ThrowsArgumentException(string input)
+        {
+            Assert.Throws<ArgumentException>(() => DocParser.Parse(input));
+        }
+
+        [Theory]
+        [InlineData(@"""Иван Иванов"" 2000.12.12 2020.05.09 -1200000 2000000")]
+        [InlineData(@"""Иван Иванов"" 2000.12.12 2020.05.09 1200000 -2000000")]
+        public void Parse_NegativeCost_ThrowsArgumentException(string input)
+        {
+            Assert.Throws<ArgumentException>(() => DocParser.Parse(input));
+        }
+
+        [Theory]
+        [InlineData(@"""Иван Иванов"" 2000-12-12 2020.05.09 1200000 2000000")]
+        [InlineData(@"""Иван Иванов"" 2000.12.12 2020/05/09 1200000 2000000")]
+        [InlineData(@"""Иван Иванов"" 2000.13.12 2020.05.09 1200000 2000000")]
+        [InlineData(@"""Иван Иванов"" 2000.12.12 2020.05.32 1200000 2000000")]
+        public void Parse_InvalidDate_ThrowsArgumentException(string input)
+        {
+            Assert.Throws<ArgumentException>(() => DocParser.Parse(input));
+        }
+
+        [Fact]
+        public void Parse_ExtraSpaces_ReturnsCorrectDoc()
+        {
+            string input = @"""Иван Иванов""    2000.12.12    2020.05.09    1200000    2000000";
+
+            Doc doc = DocParser.Parse(input);
+
+            Assert.Equal("Иван Иванов", doc.Owner.Name);
+            Assert.Equal(new DateTime(2000, 12, 12), doc.Owner.BirthDate);
+            Assert.Equal(new DateTime(2020, 5, 9), doc.Date);
+            Assert.Equal(1200000, doc.Cost.GovCost);
+            Assert.Equal(2000000, doc.Cost.MarketCost);
+        }
+
+        [Fact]
+        public void Parse_MultipleWordsInName_ReturnsFullName()
+        {
+            string input = @"""Иван Иванович Иванов"" 2000.12.12 2020.05.09 1200000 2000000";
+
+            Doc doc = DocParser.Parse(input);
+
+            Assert.Equal("Иван Иванович Иванов", doc.Owner.Name);
+        }
     }
 }

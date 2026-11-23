@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IS
+﻿namespace IS
 {
     public class Doc
     {
         public Person Owner { get; }
-        public string Date { get; }
+        public DateTime Date { get; }
         public Cost Cost { get; }
 
-        public Doc(string ownerName, string birthDate, string date, string govCost, string marketCost)
+        public Doc(string ownerName, DateTime birthDate, DateTime date, int govCost, int marketCost)
         {
             Owner = new Person(ownerName, birthDate);
             Date = date;

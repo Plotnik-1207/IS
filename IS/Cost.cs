@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IS
+﻿namespace IS
 {
     public class Cost
     {
-        public string GovCost { get; }
-        public string MarketCost { get; }
+        public int GovCost { get; }
+        public int MarketCost { get; }
 
-        public Cost(string govCost, string marketCost)
+        public Cost(int govCost, int marketCost)
         {
             GovCost = govCost;
             MarketCost = marketCost;
