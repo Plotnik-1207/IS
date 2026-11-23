@@ -24,7 +24,7 @@
 Клонируйте репозиторий и перейдите в корневую директорию:
 
 ```bash
-git clone https://github.com
+git clone https://github.com/Plotnik-1207/IS
 cd IS
 ```
 
